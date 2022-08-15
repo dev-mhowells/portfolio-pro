@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4em;
+  margin: 0;
+}
+
+p {
+  font-size: 1.125em;
+}
+
+button {
+  font-family: "Nunito", sans-serif;
+}
+
+/* ----------- LANDING ----------- */
+
+.landing {
+  width: 100%;
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid black;
+}
+
+.landing-body {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+nav * {
+  font-size: 1.5em;
+}
+
+/* ----------- LANDING-LEFT ----------- */
+
+.landing-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-text,
+.landing-links {
+  margin-left: 5%;
+}
+
+.landing-text {
+  margin-top: 5%;
+}
+
+.landing-links {
+  align-self: center;
+  margin-bottom: 5%;
+}
+
+.section-link-button {
+  font-size: 1.5em;
+  padding: 0.3em 0.6em;
+  border: none;
+  border-radius: 1em;
+  background-color: #fcfcd4;
+}
+
+/* ----------- LANDING-RIGHT ----------- */
+
+.landing-right {
+  width: 50%;
+  min-width: 640px;
+  border: 2px solid red;
+  position: relative;
+}
+
+.personal-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  z-index: 100;
+}
+
+.personal-title {
+  font-size: 1.5em;
+  padding: 0.4em 0.8em;
+  background-color: #e6f4f1;
+  border-radius: 0.5em;
+  display: inline;
+}
+
+.profile-pic {
+  position: absolute;
+  right: -80px;
+  overflow: unset;
+  height: 550px;
+}
