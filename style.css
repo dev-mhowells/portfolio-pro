@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-size: 16px;
   font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -26,7 +27,6 @@ button {
   background-image: url("./images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  border: 2px solid black;
 }
 
 .landing-body {
@@ -38,11 +38,11 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 10%;
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 nav * {
+  margin-top: 1em;
+  margin-bottom: 1em;
   font-size: 1.5em;
 }
 
@@ -56,11 +56,15 @@ nav * {
 
 .landing-text,
 .landing-links {
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 .landing-text {
   margin-top: 5%;
+}
+
+.landing-description {
+  width: 80%;
 }
 
 .landing-links {
@@ -68,9 +72,9 @@ nav * {
   margin-bottom: 5%;
 }
 
-.section-link-button {
+.landing-link-btn {
   font-size: 1.5em;
-  padding: 0.3em 0.6em;
+  padding: 0.3em 1.7em;
   border: none;
   border-radius: 1em;
   background-color: #fcfcd4;
@@ -81,7 +85,6 @@ nav * {
 .landing-right {
   width: 50%;
   min-width: 640px;
-  border: 2px solid red;
   position: relative;
 }
 
@@ -108,4 +111,24 @@ nav * {
   right: -80px;
   overflow: unset;
   height: 550px;
+}
+
+/* ----------- SKILLS ----------- */
+
+.skills-heading {
+  margin-top: 2%;
+  margin-left: 5%;
+  display: flex;
+  gap: 4%;
+}
+
+.logo {
+  align-self: center;
+}
+
+.skill-names {
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
