@@ -25,7 +25,7 @@
           <div class="landing-text">
             <h1>Hello, I'm Michael</h1>
             <p class="landing-description">
-              I’m a web developer based around London. I specialise in building
+              I’m a web developer based in London. I specialise in building
               websites and web applications that help people. I’m currently
               using React to develop tools that make online language learning
               more interactive!
@@ -83,6 +83,107 @@
         <p class="skill-name">Tailwind CSS</p>
         <p class="skill-name">Figma</p>
       </div>
+    </section>
+    <section class="work-section">
+      <div class="work-section-desc">
+        <h2>Recent Work</h2>
+        <p>
+          I’m currently working on expanding the projects I’ve been working on
+          in order to bring them to a real user base.
+        </p>
+      </div>
+      <div class="prjs-display">
+        <div class="prj-display">
+          <div class="prj-main">
+            <h3 class="prj-title">Messenger for language learners</h3>
+            <div class="prj-img-container prj-container-blue">
+              <img
+                class="messenger-screenshot"
+                src="./images/messenger/demo-correction.JPG"
+                alt="messenger-screenshot"
+              />
+            </div>
+            <p class="prj-description">
+              Allows teachers to correct messages from students. Students can
+              also easily call attention to words they don’t know. Teachers can
+              then provide synonyms, examples and pronunciation for these words
+              through text and audio.
+            </p>
+          </div>
+          <div class="prj-bottom">
+            <p class="prj-tools">
+              Made with: HTML, CSS, Tailwind, JavaScript, React and Firebase.
+            </p>
+            <div class="prj-btns">
+              <button class="prj-btn">write-up</button>
+              <button class="prj-btn">view live</button>
+              <button class="prj-btn">GitHub</button>
+            </div>
+          </div>
+        </div>
+        <div class="prj-display">
+          <div class="prj-main">
+            <h3 class="prj-title">English Deck</h3>
+            <div class="prj-img-container prj-container-green">
+              <img
+                class="article-screenshot"
+                src="./images/article/preview.png"
+                alt="article-screenshot"
+              />
+            </div>
+            <p class="prj-description">
+              An article with built in flashcards, a quiz, and comment section.
+              Flashcards can be flipped, cycled through and saved for review. A
+              quiz at the end checks article comprehension. Readers can log in
+              and practice using key words in the comment section, which checks
+              off these words as they are typed by the user.
+            </p>
+          </div>
+          <div class="prj-bottom">
+            <p class="prj-tools">
+              Made with: HTML, CSS, JavaScript, React and Firebase.
+            </p>
+            <div class="prj-btns">
+              <button class="prj-btn">write-up</button>
+              <button class="prj-btn">view live</button>
+              <button class="prj-btn">GitHub</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="contact-text">
+        <h2>Would you like to work with me?</h2>
+        <p>
+          If you’re looking for an enthusiastic developer, or you have any
+          questions, please reach out!
+        </p>
+        <p>Feel free to message me on LinkedIn, or use the form below.</p>
+      </div>
+      <form class="form" name="contact-form" method="POST" data-netlify="true">
+        <div class="first-name-container">
+          <label for="first-name">*first name</label>
+          <input type="text" name="first-name" class="first-name" required />
+        </div>
+        <div class="last-name-container">
+          <label for="last-name">last name</label>
+          <input type="text" name="last-name" class="last-name" />
+        </div>
+        <div class="email-container">
+          <label for="email">*email</label>
+          <input type="email" name="email" class="email" required />
+        </div>
+        <div class="number-container">
+          <label for="phone-number">phone number</label>
+          <input type="tel" class="phone-number" name="phone-number" />
+        </div>
+        <div class="message-container">
+          <label for="message">*message</label>
+          <textarea name="message" class="message" required></textarea>
+        </div>
+        <button type="submit" class="submit">submit</button>
+      </form>
     </section>
     <script src="script.js"></script>
   </body>

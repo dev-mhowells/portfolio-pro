@@ -43,7 +43,7 @@ nav {
 nav * {
   margin-top: 1em;
   margin-bottom: 1em;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 /* ----------- LANDING-LEFT ----------- */
@@ -116,7 +116,7 @@ nav * {
 /* ----------- SKILLS ----------- */
 
 .skills-heading {
-  margin-top: 2%;
+  margin-top: 3%;
   margin-left: 5%;
   display: flex;
   gap: 4%;
@@ -127,8 +127,161 @@ nav * {
 }
 
 .skill-names {
+  margin-top: 3%;
   margin-left: 5%;
+  margin-bottom: 5%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+}
+
+/* ----------- WORK ----------- */
+
+.work-section-desc {
+  margin-left: 5%;
+  width: 40%;
+}
+
+.prjs-display {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+  justify-items: center;
+}
+
+.prj-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.prj-img-container {
+  height: 350px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prj-container-blue {
+  background-color: #add2f8;
+}
+
+.prj-container-green {
+  background-color: #e6f4f1;
+}
+
+.messenger-screenshot {
+  height: 80%;
+}
+
+.article-screenshot {
+  height: 80%;
+}
+
+.prj-btns {
+  display: flex;
+  gap: 3%;
+}
+
+.prj-btn,
+.submit {
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+  background-color: #5291d0;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 1em;
+}
+
+/* ----------- CONTACT ----------- */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-text {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.form {
+  align-self: center;
+  width: 40%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr) 2fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3%;
+}
+
+input,
+textarea {
+  border: 2px solid black;
+  border-radius: 0.3em;
+  font-size: 1em;
+  padding: 0.3em;
+  background-color: transparent;
+  outline: none;
+
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+.form * {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-name-container {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.second-name-container {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.email-container {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.number-container {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.message-container {
+  height: 100%;
+  width: 100%;
+  align-self: start;
+  justify-self: start;
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+textarea {
+  width: auto;
+  height: 100%;
+}
+
+.submit {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / span 2;
+  grid-row: 4;
 }
