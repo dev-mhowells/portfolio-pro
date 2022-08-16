@@ -25,6 +25,11 @@ p {
   line-height: 1.7em;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 button {
   font-family: "Nunito", sans-serif;
 }
@@ -245,6 +250,10 @@ nav * {
 .contact-section {
   display: flex;
   flex-direction: column;
+}
+
+.contact-section a {
+  color: #5291d0;
 }
 
 .contact-text {
