@@ -14,6 +14,7 @@ h2 {
 
 p {
   font-size: 1.125em;
+  line-height: 1.7em;
 }
 
 button {
@@ -30,17 +31,22 @@ button {
 }
 
 .landing-body {
-  display: flex;
+  max-width: 1349px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1.5fr 1fr;
 }
 
 nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-right: 10%;
   gap: 10%;
 }
 
 nav * {
+  font-weight: 600;
   margin-top: 1em;
   margin-bottom: 1em;
   font-size: 1em;
@@ -54,8 +60,20 @@ nav * {
   flex-direction: column;
 }
 
-.landing-text,
-.landing-links {
+.landing-left-top {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+}
+
+.landing-left-bottom {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
+}
+
+.landing-text {
   margin-left: 10%;
 }
 
@@ -65,6 +83,9 @@ nav * {
 
 .landing-description {
   width: 80%;
+  align-self: center;
+  justify-self: center;
+  line-height: 2em;
 }
 
 .landing-links {
@@ -83,6 +104,8 @@ nav * {
 /* ----------- LANDING-RIGHT ----------- */
 
 .landing-right {
+  grid-column: 2;
+  grid-row: 1 / span 2;
   width: 50%;
   min-width: 640px;
   position: relative;
@@ -116,7 +139,7 @@ nav * {
 /* ----------- SKILLS ----------- */
 
 .skills-heading {
-  margin-top: 3%;
+  margin-top: 4%;
   margin-left: 5%;
   display: flex;
   gap: 4%;
@@ -129,7 +152,6 @@ nav * {
 .skill-names {
   margin-top: 3%;
   margin-left: 5%;
-  margin-bottom: 5%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -138,6 +160,7 @@ nav * {
 /* ----------- WORK ----------- */
 
 .work-section-desc {
+  margin-top: 4%;
   margin-left: 5%;
   width: 40%;
 }
@@ -145,7 +168,6 @@ nav * {
 .prjs-display {
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 5%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5%;
@@ -206,17 +228,32 @@ nav * {
 }
 
 .contact-text {
-  margin-top: 5%;
+  margin-top: 4%;
   margin-left: 5%;
+  margin-bottom: 4%;
+}
+
+.contact-text p {
+  width: 40%;
+}
+
+.form-background {
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form {
-  align-self: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
   width: 40%;
   display: grid;
   grid-template-rows: repeat(2, 1fr) 2fr 1fr;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3%;
+  gap: 5%;
 }
 
 input,
