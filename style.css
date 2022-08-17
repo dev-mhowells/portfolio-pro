@@ -38,19 +38,6 @@ button:hover {
   cursor: pointer;
 }
 
-/* TEMP */
-
-/* @media all and (max-width: 600px) {
-    .form {
-      margin-left: 0;
-      width: 80%;
-      margin-bottom: 15%;
-    }
-    .submit {
-      background-color: #fec5bb;
-    } 
-  } */
-
 /* ----------- LANDING ----------- */
 
 .landing {
@@ -190,12 +177,29 @@ nav * {
 .skills-heading {
   margin-top: 4%;
   margin-left: 5%;
+  margin-right: 5%;
   display: flex;
   gap: 4%;
 }
 
+.logos {
+  display: flex;
+  gap: 4%;
+  width: 80%;
+}
+
 .logo {
   align-self: center;
+  max-width: 13%;
+  max-height: 90%;
+}
+
+@media (min-width: 800px) {
+  .logo {
+    width: auto;
+    max-width: none;
+    max-height: none;
+  }
 }
 
 .skill-names {
