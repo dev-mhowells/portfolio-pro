@@ -38,6 +38,19 @@ button:hover {
   cursor: pointer;
 }
 
+/* TEMP */
+
+/* @media all and (max-width: 600px) {
+    .form {
+      margin-left: 0;
+      width: 80%;
+      margin-bottom: 15%;
+    }
+    .submit {
+      background-color: #fec5bb;
+    } 
+  } */
+
 /* ----------- LANDING ----------- */
 
 .landing {
@@ -56,6 +69,12 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1.5fr 1fr;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 nav {
