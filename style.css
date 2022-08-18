@@ -356,6 +356,7 @@ nav * {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 5%;
 }
 
 .prj-img-container {
