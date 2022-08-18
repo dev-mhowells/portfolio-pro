@@ -13,8 +13,15 @@ body {
 h1,
 h2 {
   font-family: "Ubuntu", sans-serif;
-  font-size: 4em;
+  font-size: 3em;
   margin: 0;
+}
+
+@media (min-width: 800px) {
+  h1,
+  h2 {
+    font-size: 4em;
+  }
 }
 
 h3 {
@@ -54,8 +61,16 @@ button:hover {
 
 .landing-body {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1.5fr 0.5fr;
+}
+
+@media (min-width: 800px) {
+  .landing-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -80,7 +95,13 @@ nav {
   justify-content: space-between;
   margin-right: 10%;
   gap: 10%;
-  align-self: flex-end;
+  align-self: center;
+}
+
+@media (min-width: 800px) {
+  nav {
+    align-self: flex-end;
+  }
 }
 
 nav * {
@@ -106,17 +127,24 @@ nav * {
 }
 
 .landing-left-bottom {
-  grid-column: 1;
+  grid-column: 1 / span 2;
   grid-row: 2;
-  margin-left: 15%;
+  margin-left: 0;
   align-self: center;
   justify-self: center;
+}
+
+@media (min-width: 550px) {
+  .landing-left-bottom {
+    grid-column: 1;
+  }
 }
 
 @media (min-width: 1200px) {
   .landing-left-bottom {
     grid-column: 1 / span 2;
-    margin-left: 0;
+    /* margin-left: 0; */
+    /* margin-left: 15%; */
   }
 }
 
@@ -129,9 +157,9 @@ nav * {
 }
 
 .landing-description {
-  width: 80%;
+  width: 90%;
   align-self: center;
-  justify-self: center;
+  /* justify-self: center; */
   line-height: 2em;
 }
 
@@ -157,22 +185,26 @@ nav * {
 /* ----------- LANDING-RIGHT ----------- */
 
 .landing-right {
+  justify-self: center;
   grid-column: 2;
-  grid-row: 1 / span 2;
-  width: 50%;
-  min-width: 400px;
+  grid-row: 1;
+
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .landing-right {
-    grid-column: 2;
-    grid-row: 1 / span 2;
     width: 50%;
     min-width: 400px;
-    position: relative;
+    grid-row: 1 / span 2;
+  }
+}
+
+@media (min-width: 1000px) {
+  .landing-right {
+    grid-row: 1 / span 2;
     display: block;
   }
 }
@@ -183,27 +215,23 @@ nav * {
   }
 }
 
-/* .personal-titles {
-  width: none;
+.personal-titles {
+  justify-self: flex-start;
   display: flex;
   flex-direction: column;
   gap: 10%;
   position: absolute;
-  top: 10%;
-  left: 15%;
-  z-index: 100;
-} */
-
-.personal-titles {
-  display: flex;
-
-  width: 100%;
-  gap: 10%;
-  position: absolute;
   bottom: 0;
-
   z-index: 100;
   font-size: 0.75em;
+}
+
+@media (min-width: 800px) {
+  .personal-titles {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -227,7 +255,20 @@ nav * {
 }
 
 .profile-pic {
-  height: 470px;
+  height: 200px;
+  width: fit-content;
+}
+
+@media (min-width: 600px) {
+  .profile-pic {
+    height: 300px;
+  }
+}
+
+@media (min-width: 800px) {
+  .profile-pic {
+    height: 470px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -244,12 +285,6 @@ nav * {
     height: 550px;
   }
 }
-
-/* @media (min-width: 800px) {
-  .profile-pic {
-    height: 470px;
-  }
-} */
 
 /* ----------- SKILLS ----------- */
 
