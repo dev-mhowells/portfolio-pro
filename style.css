@@ -185,17 +185,26 @@ nav * {
 }
 
 .landing-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 100;
   align-self: center;
   margin-bottom: 5%;
 }
 
 .landing-link-btn {
-  font-size: 1.5em;
+  font-size: 1em;
   padding: 0.3em 1.7em;
   border: none;
   border-radius: 1em;
   background-color: #fcfcd4;
+}
+
+@media (min-width: 800px) {
+  .landing-link-btn {
+    font-size: 1.5em;
+  }
 }
 
 .landing-link-btn:hover {
@@ -242,9 +251,9 @@ nav * {
   flex-direction: column;
   gap: 10%;
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
   z-index: 100;
-  font-size: 0.75em;
+  font-size: 1em;
 }
 
 @media (min-width: 800px) {
@@ -263,12 +272,12 @@ nav * {
     top: 10%;
     left: 15%;
     right: auto;
-    font-size: 1em;
+    font-size: 1.25em;
   }
 }
 
 .personal-title {
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
   padding: 0.4em 0.8em;
   background-color: #e6f4f1;
   border-radius: 0.5em;
