@@ -13,7 +13,7 @@ body {
 h1,
 h2 {
   font-family: "Ubuntu", sans-serif;
-  font-size: 3em;
+  font-size: 2em;
   margin: 0;
 }
 
@@ -22,7 +22,7 @@ h3 {
 }
 
 p {
-  font-size: 1.125em;
+  font-size: 0.75em;
   line-height: 1.7em;
 }
 
@@ -31,15 +31,26 @@ a {
   color: black;
 }
 
+@media (min-width: 600px) {
+  h1,
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.7em;
+  }
+}
+
 @media (min-width: 800px) {
   h1,
   h2 {
     font-size: 4em;
   }
-  /* p {
-        font-size: 1.125em;
-        line-height: 1.7em;
-      } */
+  p {
+    font-size: 1.125em;
+    line-height: 1.7em;
+  }
 }
 
 button {
@@ -260,7 +271,6 @@ nav * {
 
 .profile-pic {
   height: 200px;
-  /* width: fit-content; */
 }
 
 @media (min-width: 600px) {
