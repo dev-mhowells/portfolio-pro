@@ -148,14 +148,14 @@ nav * {
 }
 
 .landing-left-bottom {
-  grid-column: 1;
+  grid-column: 1 / span 2;
   grid-row: 2;
   margin-left: 0;
   align-self: center;
   justify-self: center;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 500px) {
   .landing-left-bottom {
     grid-column: 1;
   }
@@ -251,9 +251,15 @@ nav * {
   flex-direction: column;
   gap: 10%;
   position: absolute;
-  bottom: 0;
+  bottom: 25%;
   z-index: 100;
   font-size: 1em;
+}
+
+@media (min-width: 500px) {
+  .personal-titles {
+    bottom: 0;
+  }
 }
 
 @media (min-width: 800px) {
