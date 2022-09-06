@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MichaelDHowells</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Ubuntu:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav>
+        <a href="../index.html #home">Home</a>
+        <a href="../index.html #work-section">Work</a>
+        <a href="../index.html #contact-section">Contact</a>
+      </nav>
+    </div>
+    <section class="project-main">
+      <h2 class="project-title">CMS for English Deck App</h2>
+      <h3>Summary</h3>
+      <p>
+        I wanted a content management for the site which would allow me to
+        update it with a single click, while providing all the data that was
+        needed for the interactive elements on the site, such as the flashcards
+        and quizzes. My solution was to build a CMS with sections corresponding
+        to individual components in the React app. This also allowed me complete
+        control over the structure of the database.
+      </p>
+      <div class="screenshot-box-col">
+        <img
+          src="../images/article/cmscap1.JPG"
+          class="large-cap screenshot img-in-col"
+          alt="project-screeenshot"
+        />
+      </div>
+      <h3>Build</h3>
+      <p>
+        I started with a clear idea that I wanted individual components to
+        update a single object which was accessible to their common parent so
+        that all of the data could be uploaded to the database (or edited) with
+        a single click. By keeping the app modular in this way, I hope to easily
+        be able to scale the CMS to the needs of the website, which is something
+        I plan to continue working on, adding more interactive elements which
+        will have their own corresponding sections in the CMS.
+      </p>
+      <div class="screenshot-box-col">
+        <img
+          src="../images/article/cmscap2.JPG"
+          class="large-cap screenshot wide-cap img-in-col"
+          alt="project-screeenshot"
+        />
+      </div>
+      <h3>Challenges</h3>
+      <p>
+        The app is relatively simple so there weren’t too many technical
+        challenges that I came across during the build. However, I was surprised
+        by how much thought had to go into designing the functionality. Some
+        questions I had to ask were: Should section edits be saved automatically
+        or require manual saves? When does it make sense to add a tab system as
+        opposed to displaying all the information on the page in a list? What
+        kind of feedback should users get when updating, saving and deleting
+        elements?
+      </p>
+      <p id="p-below-p">
+        I also had to think about how to organise the database when it came to
+        storing user comments. As Firebase is optimised for collections which
+        can hold a large number of smaller documents, I decided on a structure
+        whereby individual articles are stored as documents inside a larger
+        collection, but also contain their own subcollection which holds a
+        separate document for each user comment. This appears to be the most
+        performant solution.
+      </p>
+      <p id="p-below-p">
+        Since finishing the functionality of the app and using it to update my
+        site, I realise that I got some of the answers to those questions wrong.
+        Users are required to manually save edits to the vocabulary section,
+        which feels clunky in practice. It also doesn’t feel like there is
+        enough feedback to indicate successful saves on edit. Although these are
+        not huge changes to make, I do wish I had spent a little more time
+        testing out the user experience while making that section, and it’s
+        certainly something I will start doing more of when working on future
+        builds.
+      </p>
+      <div class="write-up-btns">
+        <a href="https://github.com/dev-mhowells/English-Deck-CMS"
+          ><button class="prj-btn write-up-btn">GitHub</button>
+        </a>
+      </div>
+    </section>
+    <script src="../index.js"></script>
+  </body>
+</html>

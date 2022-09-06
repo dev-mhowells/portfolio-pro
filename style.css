@@ -382,7 +382,7 @@ nav * {
   .prjs-display {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5%;
+    gap: 4%;
     justify-items: center;
   }
 }
@@ -391,7 +391,6 @@ nav * {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 5%;
 }
 
 .prj-img-container {
@@ -410,7 +409,7 @@ nav * {
   background-color: #e6f4f1;
 }
 
-.messenger-screenshot {
+.shadowed-screenshot {
   max-height: 80%;
   max-width: 90%;
   box-shadow: -3px 4px 5px 5px rgba(0, 0, 0, 0.25);
@@ -440,6 +439,7 @@ nav * {
 /* ----------- CONTACT ----------- */
 
 .contact-section {
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
 }
