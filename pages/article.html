@@ -25,17 +25,41 @@
       <h2 class="project-title">English Deck</h2>
       <h3>Summary</h3>
       <p>
-        English Deck is as a minimum viable product for an e-learning platform
-        built with React. The goal was to create highly interactive articles for
-        English learners which included flashcards, a quiz, and a section for
-        writing practice and reading submissions from other learners. The
-        information from each of these elements is stored and retrieved from
-        Firebase on the back-end.
+        English Deck is as a minimum viable product for an online-learning
+        platform built with React. The goal was to create highly interactive
+        articles for English learners which included flashcards, quizzes,
+        writing practice, and the ability to read submissions from other
+        learners. What started with an idea for a single page layout which
+        included all of these elements, grew into site based around these
+        articles with its own custom built content management system.
+      </p>
+      <div class="screenshot-box-col">
+        <img
+          src="../images/article/englishdeckhome.JPG"
+          class="large-cap screenshot img-in-col"
+          alt="project-screeenshot"
+        />
+        <img
+          src="../images/article/englishdeckhome2.JPG"
+          class="small-cap screenshot img-in-col"
+          alt="project-screenshot-mobile"
+        />
+      </div>
+      <h3>Technology</h3>
+      <p>
+        It made sense to create the app with React because I wanted the
+        interactive elements of the site to be reusable and as modular as
+        possible. This was not only because some of these elements are used
+        multiple times within the same page, but also to allow me to easily
+        build on the project by creating different page layouts and weaving in
+        new interactive components should I wish to do so in the future. Using
+        Firebase was also an obvious choice as it allows for rapid development
+        in terms of database, storage, authentication and deployment.
       </p>
       <div class="screenshot-box">
         <img
           src="../images/article/cap1.JPG"
-          class="large-cap screenshot"
+          class="large-cap screenshot wide-cap"
           alt="project-screeenshot"
         />
         <img
@@ -44,13 +68,16 @@
           alt="project-screenshot-mobile"
         />
       </div>
-      <h3>Technology</h3>
+      <h3>Challenges and Improvements</h3>
       <p>
-        The entire app is designed to be a reusable article template, and the
-        app itself also contains reusable components. It therefore made sense to
-        create the app with React. Using Firebase was also an obvious choice as
-        it allows for rapid development both in terms of storage and
-        authentication.
+        I had built the article itself a little while ago and there was some
+        challenge involved with integrating its various components with the new
+        database structure I had decided on while building the CMS. There was
+        also some challenge associated with standardising the design of the app
+        between the landing page and article elements. This is something which
+        is still a work in progress. Coming back to CSS I had had previously
+        written certainly brought home the importance of naming classes
+        properly.
       </p>
       <div class="screenshot-box">
         <img
@@ -64,19 +91,14 @@
           alt="project-screenshot-mobile"
         />
       </div>
-      <h3>Challenges and Improvements</h3>
       <p>
-        Organising the information flow between components was tricky and I
-        considered whether I would need to use the Context API in order to avoid
-        prop drilling. Ultimately, this wasn’t necessary and the project mainly
-        relies on the use of props and the useState and useEffect hooks.
-      </p>
-      <p id="p-below-p">
-        I would like to come back to the project and use it as an opportunity to
-        learn more about the Firestore data model and NoSQL databases. I think
-        this would also be a good opportunity to incorporate React Router and
-        scale the app into a site which can easily be updated with more
-        interactive articles which follow the same template.
+        I also had to think about how to organise the database when it came to
+        storing user comments. As Firebase is optimised for collections which
+        can hold a large number of smaller documents, I decided on a structure
+        whereby individual articles are stored as documents inside a larger
+        collection, but also contain their own subcollection which holds a
+        separate document for each user comment. This appears to be the most
+        performant solution.
       </p>
       <div class="screenshot-box">
         <img
@@ -90,7 +112,7 @@
           alt="project-screenshot-mobile"
         />
       </div>
-      <h3>Lessons Learned</h3>
+      <h3>Final Thoughts</h3>
       <p>
         Despite the relatively small scale of the project, the integration of a
         number of distinct components required considerable thought for
@@ -98,23 +120,20 @@
         of information between parent and child components in React.
       </p>
       <p id="p-below-p">
-        The project was large enough in scale to allow me to deepen my
-        understanding of React Hooks, and I’m looking forward to working on
-        something which will allow me to work more with other elements of React,
-        such as the Context API and Custom Hooks.
-      </p>
-      <p id="p-below-p">
-        Working with React and Firebase was also an excellent chance to practice
-        more with asynchronous JavaScript and introduced a new set of challenges
-        (and a new set of error codes!), which gave me a deeper understanding of
-        asynchronicity, callback functions and promises.
+        When deciding to build the site, I knew I would need some kind CMS which
+        allowed me to publish articles to the site, but which would also allow
+        me to populate more the more intricate components which aren’t simply
+        blocks of text. Ultimately I decided that I wanted complete control over
+        this process and decided to build a custom CMS structured around the
+        components in the app. You can read a little about what went into that
+        here.
       </p>
       <div class="write-up-btns">
         <a
           href="https://github.com/dev-mhowells/english-deck-article/blob/main/README.md"
           ><button class="prj-btn write-up-btn">GitHub</button>
         </a>
-        <a href="https://flashcards-77222.web.app/"
+        <a href="https://english-articles-35937.web.app/"
           ><button class="prj-btn write-up-btn">view live</button></a
         >
       </div>

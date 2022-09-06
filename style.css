@@ -614,6 +614,20 @@ textarea {
   margin-bottom: 5%;
 }
 
+.screenshot-box-col {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #add2f8;
+}
+
+.img-in-col {
+  margin: 1em 0;
+}
+
 .screenshot-box {
   height: 600px;
   width: auto;
